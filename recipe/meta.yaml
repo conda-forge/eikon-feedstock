@@ -1,5 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.2b0" %}
+{% set sha256 = "0bc95e50d6122adb502259a150288cb3be54203efc8833452fa9a8f0032f1a77" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 519f1bf424c68b91ca4827c31a4ed42fb26fb9426599fb9138880f3599345392
+  sha256: {{ sha256 }}
   
 build:
   noarch: python
@@ -16,14 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
     - python-dateutil
     - deprecation
-    - appdirs
-    - requests
+    - appdirs =1.4.3
+    - requests =2.22.0
+    - requests-async =0.6.2
+    - nest-asyncio =1.0.0
     - websocket-client
     - pandas >=0.17.0
     - numpy >=1.11.0
