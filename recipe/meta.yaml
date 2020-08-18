@@ -1,6 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "bc329dfa09edb6909adf3976b24e1afaa9be2b88939d4fcb108f50a030fa26d9" %}
+{% set version = "1.1.4" %}
+{% set sha256 = "e64d64dfb551e1efef8dc35ececa3c3f47a50682a0f57856d2c74b5d6b7ff7a0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,11 +9,11 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - websocket-client
     - pandas >=0.17.0
     - numpy >=1.11.0
-    
+
 test:
   imports:
     - eikon
@@ -38,9 +38,9 @@ test:
 about:
   home: https://developers.refinitiv.com/
   license: Apache-2.0
-  license_family:  Apache
+  license_family: Apache
   license_file: LICENSE.txt
-  summary: 'Python API for accessing Eikon data directly from any application running on your desktop'
+  summary: Python API for accessing Eikon data directly from any application running on your desktop
   description: |
     The Eikon Data API provide simple access to users who require programmatic access to Eikon data on the desktop. 
     This API is intended for Eikon users. Applications and scripts using this API must be run beside Eikon on the same desktop machine for the Eikon user only.
