@@ -1,6 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.1.6.post2" %}
-{% set sha256 = "dd2c5c35be796d4675e242f654619c491358e61ad32b69d304b134e5c59a9443" %}
+{% set version = "1.1.6" %}
+{% set sha256 = "c896a7e1ae3b21f78e5ad1a3f17f0b66afbdc60c2594817cd717b0a544cecd40" %}
 
 package:
   name: {{ name|lower }}
