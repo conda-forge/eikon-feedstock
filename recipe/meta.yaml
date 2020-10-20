@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - websocket-client
     - pandas >=0.17.0
     - numpy >=1.11.0
+    - h2 <=3.2.0
 
 test:
   imports:
