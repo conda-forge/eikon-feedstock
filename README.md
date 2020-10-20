@@ -5,9 +5,13 @@ Home: https://developers.refinitiv.com/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eikon-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python API for accessing Eikon data directly from any application running on your desktop
+
+Development: https://developers.refinitiv.com/eikon-apis/eikon-data-api/
+
+Documentation: https://developers.refinitiv.com/eikon-apis/eikon-data-api/docs
 
 The Eikon Data API provide simple access to users who require programmatic access to Eikon data on the desktop.
 This API is intended for Eikon users. Applications and scripts using this API must be run beside Eikon on the same desktop machine for the Eikon user only.
