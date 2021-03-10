@@ -1,6 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.1.8" %}
-{% set sha256 = "a210034923260ad1124aaa2d1eb934a51fcfecfc41e6cff616455c9f60c6bfb3" %}
+{% set version = "1.1.9" %}
+{% set sha256 = "23339d2baf22268fbe8ff816c2f47a0a2c5323d7e6caff0e13e0d7099ed81f4e" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
