@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >3.6
-    - requests-async>=0.6.2
+    - requests-async >=0.6.2
     - python-dateutil
     - deprecation
     - appdirs >=1.4.3
