@@ -1,6 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.1.8" %}
-{% set sha256 = "a210034923260ad1124aaa2d1eb934a51fcfecfc41e6cff616455c9f60c6bfb3" %}
+{% set version = "1.1.9" %}
+{% set sha256 = "23339d2baf22268fbe8ff816c2f47a0a2c5323d7e6caff0e13e0d7099ed81f4e" %}
 
 package:
   name: {{ name|lower }}
@@ -17,16 +17,23 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >3.6
     - pip
   run:
-    - python >=3.6
+    - python >3.6
+    - requests-async>=0.6.2
     - python-dateutil
     - deprecation
     - appdirs >=1.4.3
-    - httpx <0.15
+    - httpx
+    - nest_asyncio
+    - datetime
+    - python-configuration
+    - eventemitter
+    - watchdog
+    - scipy
     - nest-asyncio <1.4.0,>=1.3.0
-    - websocket-client
+    - websocket-client <0.58.0,>=0.54.0
     - pandas >=1.0.0
     - numpy >=1.11.0
 
