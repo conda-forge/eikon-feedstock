@@ -26,13 +26,13 @@ requirements:
     - deprecation
     - appdirs >=1.4.3
     - httpx
-    - nest_asyncio
-    - datetime
+    - nest-asyncio
+    - DateTime
     - python-configuration
-    - eventemitter
-    - watchdog
+    - eventemitter >=0.2.0
+    - watchdog >=0.10.2
     - scipy
-    - nest-asyncio <1.4.0,>=1.3.0
+    - nest-asyncio
     - websocket-client <0.58.0,>=0.54.0
     - pandas >=1.0.0
     - numpy >=1.11.0
