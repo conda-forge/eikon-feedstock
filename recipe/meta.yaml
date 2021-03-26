@@ -17,21 +17,15 @@ build:
 
 requirements:
   host:
-    - python >3.6
+    - python >=3.6
     - pip
   run:
-    - python >3.6
-    - requests-async >=0.6.2
+    - python >=3.6
     - python-dateutil
     - deprecation
     - appdirs >=1.4.3
     - httpx
-    - nest-asyncio
-    - python-configuration
-    - eventemitter >=0.2.0
-    - watchdog >=0.10.2
-    - scipy
-    - nest-asyncio
+    - nest-asyncio >=1.5.1
     - websocket-client <0.58.0,>=0.54.0
     - pandas >=1.0.0
     - numpy >=1.11.0
