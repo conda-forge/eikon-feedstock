@@ -27,7 +27,6 @@ requirements:
     - appdirs >=1.4.3
     - httpx
     - nest-asyncio
-    - DateTime
     - python-configuration
     - eventemitter >=0.2.0
     - watchdog >=0.10.2
