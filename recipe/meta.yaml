@@ -1,6 +1,6 @@
 {% set name = "eikon" %}
-{% set version = "1.1.10" %}
-{% set sha256 = "f07c55ab937af6a0cb69d12245bb1b5cc1245602c07515267517dc53b30e80af" %}
+{% set version = "1.1.14" %}
+{% set sha256 = "3072f060315fbaed2015aa0890e65ed75ce2d50c701766003cd9d9aa1ad16ada" %}
 
 package:
   name: {{ name|lower }}
@@ -24,11 +24,21 @@ requirements:
     - python-dateutil
     - deprecation
     - appdirs >=1.4.3
-    - httpx
-    - nest-asyncio
-    - websocket-client <0.58.0,>=0.54.0
-    - pandas >=1.0.0
+    - httpx >=0.18.0
+    - nest-asyncio >=1.5.1
+    - websocket-client >=0.54.0,!=1.0.0
+    - pandas
     - numpy >=1.11.0
+    - python-dateutil
+    - deprecation
+    - certifi
+    - h2 ==3.*
+    - idna ==2.*
+    - rfc3986 ==1.*
+    - requests ==2.*
+    - chardet
+    - urllib3
+    - packaging
 
 test:
   imports:
@@ -49,3 +59,5 @@ about:
 extra:
   recipe-maintainers:
     - wiphoo
+    - Mhoian
+    - PFaurel
