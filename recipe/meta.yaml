@@ -24,11 +24,21 @@ requirements:
     - python-dateutil
     - deprecation
     - appdirs >=1.4.3
-    - httpx
-    - nest-asyncio
-    - websocket-client <0.58.0,>=0.54.0
-    - pandas >=1.0.0
+    - httpx >=0.18.0
+    - nest-asyncio >=1.5.1
+    - websocket-client >=0.54.0,!=1.0.0
+    - pandas
     - numpy >=1.11.0
+    - python-dateutil
+    - deprecation
+    - certifi
+    - h2 ==3.*
+    - idna ==2.*
+    - rfc3986 ==1.*
+    - requests ==2.*
+    - chardet
+    - urllib3
+    - packaging
 
 test:
   imports:
@@ -49,3 +59,4 @@ about:
 extra:
   recipe-maintainers:
     - wiphoo
+    - Mhoian
