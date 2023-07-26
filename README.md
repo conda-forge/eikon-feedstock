@@ -1,11 +1,11 @@
-About eikon
-===========
+About eikon-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eikon-feedstock/blob/main/LICENSE.txt)
 
 Home: https://developers.refinitiv.com/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eikon-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python API for accessing Eikon data directly from any application running on your desktop
 
